@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <title>|Calculadora de gorjeta</title>
 </head>
 
@@ -17,7 +21,7 @@
         <section class="informacoes">
             <form action="">
                 <div class="conta">
-                    <label for="conta">Conta</label>
+                    <label for="conta">Conta</strong></label>
                     <div>
                         <img src="./images/icon-dollar.svg" alt="icone cifrão">
                         <input type="number" name="conta" id="conta" placeholder="0">
@@ -25,7 +29,7 @@
                 </div>
 
                 <div class="gorjeta">
-                    <label for="outra">Selecione a gorjeta %</label>
+                    <label for="outra"><strong>Selecione a gorjeta %<strong></label>
 
                     <div>
                         <input type="button" value="5%">
@@ -33,18 +37,19 @@
                         <input type="button" value="15%">
                         <input type="button" value="25%">
                         <input type="button" value="50%">
-                        <input type="button" name="outra" id="outra" placeholder="Outra">
-
-                        <div class="pessoas">
-                            <label for="conta">Quantidade de pessoas</label>
-                            <p>Não pode ser 0</p>
-                            <div>
-                                <img src="./images/icon-person.svg" alt="icone pessoas">
-                                <input type="number" name="pessoas" id="pessoas" placeholder="0">
-                            </div>
-                        </div>
+                        <input type="text" name="outra" id="outra" placeholder="Outra">
                     </div>
                 </div>
+                <div class="pessoas">
+                    <label for="conta">Quantidade de pessoas</label>
+                    <p>Não pode ser 0</p>
+                    <div>
+                        <img src="./images/icon-person.svg" alt="icone pessoas">
+                        <input type="number" name="pessoas" id="pessoas" placeholder="0">
+                    </div>
+                </div>
+
+
             </form>
         </section>
 
