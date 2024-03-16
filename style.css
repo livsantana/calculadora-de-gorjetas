@@ -41,7 +41,8 @@ main {
 }
 
 .conta label,
-.gorjeta label .pessoas label {
+.gorjeta label,
+.pessoas label {
     color: var(--green-500);
     font-weight: 700;
 }
@@ -79,7 +80,6 @@ main {
     outline: 2px solid var(--light-green);
 }
 
-
 .gorjeta div {
     margin-top: 1rem;
 
@@ -103,12 +103,13 @@ main {
 .gorjeta #outra {
     width: 100%;
     background-color: var(--green-100);
-    color: var(--green-800);
+    color: var(var(--green-800));
 }
 
 .gorjeta #outra::placeholder {
     color: var(--green-300);
 }
+
 
 .pessoas #erro {
     display: none;
@@ -120,7 +121,7 @@ main {
     padding: 1.5rem;
 }
 
-.resultados div {
+.resultados div div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,7 +130,6 @@ main {
 .resultados p {
     color: var(--green-400);
     font-size: 0.8125rem;
-
 }
 
 .resultados p strong {
@@ -140,6 +140,7 @@ main {
 .resultados div>strong {
     color: var(--light-green);
     font-size: 2rem;
+    letter-spacing: 0;
 }
 
 .resultados .gorjeta-total {
@@ -152,7 +153,7 @@ main {
 
 .resultados button {
     width: 100%;
-    background: var(--light-green);
+    background-color: var(--light-green);
     border: none;
     border-radius: 0.3125rem;
     color: var(--green-800);
@@ -162,8 +163,20 @@ main {
     padding-block: 0.5rem;
 }
 
-@media (min-width: 920px) {
-    main{
+@media(min-width:920px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 10svh;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    header {
+        padding-top:0rem;
+    }
+
+    main {
         display: flex;
         gap: 3rem;
         padding: 3rem;
@@ -172,12 +185,27 @@ main {
         margin-inline: auto;
     }
 
-    main section,
-    main strong{
+    main section {
         width: 100%;
     }
-
-    .gorjeta div{
+    
+    .conta input::-webkit-inner-spin-button,
+    .pessoas input::-webkit-inner-spin-button{
+        display: none;
+    }
+    .gorjeta div {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .resultados{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: 2.5rem;
+    }
+
+    .resultados div > strong{
+        font-size: 3rem;
     }
 }

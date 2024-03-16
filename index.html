@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <title>|Calculadora de gorjeta</title>
+    <title>Calculadora de gorjeta</title>
 </head>
 
 <body>
     <header>
-        <img src="./images/logo.svg" alt="logo">
+        <img src="./images/logo.svg" alt="">
     </header>
 
     <main>
@@ -23,28 +23,27 @@
                 <div class="conta">
                     <label for="conta">Conta</label>
                     <div>
-                        <img src="./images/icon-dollar.svg" alt="icone cifrão">
+                        <img src="./images/icon-dollar.svg" alt="cifrão">
                         <input type="number" name="conta" id="conta" placeholder="0">
                     </div>
                 </div>
 
                 <div class="gorjeta">
-                    <label for="outra"><strong>Selecione a gorjeta %<strong></label>
-
+                    <label for="">Selecione a gorjeta</label>
                     <div>
                         <input type="button" value="5%">
                         <input type="button" value="10%">
                         <input type="button" value="15%">
                         <input type="button" value="25%">
                         <input type="button" value="50%">
-                        <input type="number" name="outra" id="outra" placeholder="Outra">
+                        <input type="number" value="outra" id="outra" placeholder="Outra">
                     </div>
                 </div>
-                <div class="pessoas">
-                    <label for="pessoas">Quantidade de pessoas</label>
-                    <p id="erro">Não pode ser 0</p>
+
+                <div class="pessoas"><label for="pessoas">Pessoas</label>
+                    <p id="erro">Não pode ser zero</p>
                     <div>
-                        <img src="./images/icon-person.svg" alt="icone pessoas">
+                        <img src="./images/icon-person.svg" alt="pessoa">
                         <input type="number" name="pessoas" id="pessoas" placeholder="0">
                     </div>
                 </div>
@@ -52,22 +51,21 @@
         </section>
 
         <section class="resultados">
-            <div class="gorjeta-total">
-                <p>
-                    <strong>Gorjeta</strong> <br>
-                    /pessoa
-                </p>
-
-                <strong>$ 0.00</strong>
-            </div>
-
-            <div class="total">
-                <p>
-                    <strong>Total</strong> <br>
-                    /pessoa
-                </p>
-
-                <strong>$ 0.00</strong>
+            <div>
+                <div class="gorjeta-total">
+                    <p>
+                        <strong>Gorjeta</strong> <br>
+                        /pessoa
+                    </p>
+                    <strong> R$ 0.00</strong>
+                </div>
+                <div class="total">
+                    <p>
+                        <strong>Total</strong> <br>
+                        /pessoa
+                    </p>
+                    <strong> R$ 0.00</strong>
+                </div>
             </div>
             <button>Limpar</button>
         </section>
