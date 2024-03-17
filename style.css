@@ -120,7 +120,7 @@ main {
 .gorjeta #outra {
     width: 100%;
     background-color: var(--green-100);
-    color: var(var(--green-800));
+    color: var(--green-800);
 }
 
 .gorjeta #outra::placeholder {
